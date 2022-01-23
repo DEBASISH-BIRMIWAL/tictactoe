@@ -93,6 +93,15 @@ int crdcheck(int a){
     if(b==2&&c==3){
         return 6;
     }
+    if(b==1){
+        return 1;
+    }
+    if(b==2){
+        return 2;
+    }
+    if(b==3){
+        return 3;
+    }
     return 0;
     
 }
@@ -112,7 +121,7 @@ int pwchange(){
         ofstream file(username+".txt");
         file<<username<<endl<<password<<endl<<actress;
         file.close();
-        cout<<"password changed sucessfully ;-)";
+        cout<<"password changed sucessfully ;-)"<<endl;
         return 0;
     }
     else{
