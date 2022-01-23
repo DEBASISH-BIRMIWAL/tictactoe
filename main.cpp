@@ -206,17 +206,15 @@ void swap_player_and_marker()
 
 void game()
 {
-    cout << "It`s player " << current_player << "`s turn. Enter your slot: ";
-    int slot;
-    cin >> slot;
-    srand(time(0));
+    
     cout << un1<< ", choose your marker: ";
     cin >> marker_p1;
     cout<<un2<<", choose your marker: ";
     cin>> marker_p2;
-
     current_player = un1;
     current_marker = marker_p1;
+
+    
 
     drawBoard();
 
@@ -224,6 +222,9 @@ void game()
 
     for(int i = 0; i < 9; i++)
     {
+        cout << "It`s player " << current_player << "`s turn. Enter your slot: ";
+        int slot;
+        cin >> slot;
         
 
         if(slot < 1 || slot > 9) {
